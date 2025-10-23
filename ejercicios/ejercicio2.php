@@ -111,7 +111,7 @@
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="..">Urtzi Diaz Arberas</a>
+          <a class="navbar-brand" href="..">Asier Jimenez de Aberasturi</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -170,14 +170,23 @@
 						$cateto1 = 10;
             $cateto2 = 15; 
             $hipotenusa = calculahipotenusa($cateto1, $cateto2);
-						echo "Un triángulo rectángulo con catetos de" .$cateto1. "y" .$cateto2. "tiene una hipotenusa de ".$hipotenusa.
-            ?>
+						echo "Un triángulo rectángulo con catetos de " .$cateto1. " y " .$cateto2. " tiene una hipotenusa de ".$hipotenusa. ".";
+        ?>
 			</article>
 			<article id="ejer2_3">
 				<h3>Ejercicio 2.3</h3>
-				<?php 
-						//TO-DO
-						?>
+				
+        
+        <?php 
+
+          require_once __DIR__ . '/../recursos/cubo.php';
+            $cuborubik = new cubo(10);
+            echo "<p>¿Está resuelto?: " . ($cuborubik->getRevuelto() ? "Sí" : "No") . "</p>";
+            $cuborubik->revolver();
+            echo "<p>¿Está resuelto?: " . ($cuborubik->getRevuelto() ? "Sí" : "No") . "</p>";
+        ?>
+
+
 			</article>
 			<article id="ejer2_4">
 				<h3>Ejercicio 2.4</h3>

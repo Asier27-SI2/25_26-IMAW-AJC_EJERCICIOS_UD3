@@ -10,13 +10,13 @@ class bombilla {
     public function getEncendida(): bool {
         return $this->encendida;
     }
-    public encender(): void {
+    public function encender(): void {
         $this->encendida=true;
-        echo "<p><em>la bombilla esta ahora encendida</p></em>"."this->encendida es".$this->encendida
+        echo "<p><em>la bombilla esta ahora encendida</p></em>"."this->encendida es".$this->encendida;
     }
-    public apagar(): void {
+    public function apagar(): void {
         $this->encendida=false;
-        echo "<p><em>la bombilla esta ahora apagada</p></em>"."this->apagada es".$this->encendida
+        echo "<p><em>la bombilla esta ahora apagada</p></em>"."this->apagada es".$this->encendida;
     }
 
     //public cambiar_estado($nuevo_estado): void(
